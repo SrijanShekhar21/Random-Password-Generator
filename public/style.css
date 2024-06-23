@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier Prime", monospace;
+}
+
+.screen {
+  background-color: #d0efb1;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  background-color: #4d7298;
+  font-size: 2rem;
+  padding: 5px;
+  padding-top: 10px;
+  font-weight: bold;
+  color: white;
+}
+
+.generatedPasswordDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.genContainer {
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 4rem;
+  width: 75%;
+  border-radius: 30px;
+  box-shadow: 0 0 5px 0 hsl(0, 0%, 75%);
+  background-color: white;
+}
+
+.password {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: hsl(0, 0%, 20%);
+  padding: 5px;
+  padding-left: 10px;
+  width: 100%;
+  height: 3rem;
+  border: none;
+  border-radius: 30px 0 0 30px;
+  /* border: 2px solid green; */
+}
+
+.password:focus {
+  outline: none;
+}
+
+.copy {
+  height: 3.8rem;
+  width: 3.8rem;
+  border: none;
+  /* border: 2px solid black; */
+  border-radius: 0 30px 30px 0;
+  background-color: white;
+}
+
+.copy:hover {
+  cursor: pointer;
+}
+
+.params {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parameters {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 75%;
+}
+
+.range {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#rangeParameter {
+  flex-grow: 1;
+  -webkit-appearance: none;
+  appearance: none;
+  background: #77a6b6;
+  width: 100%;
+  height: 10px;
+  border-radius: 10px;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+#rangeParameter:hover {
+  opacity: 1;
+}
+
+#rangeParameter::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #4d7298;
+  cursor: pointer;
+}
+
+.rangeLabel {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: hsl(0, 0%, 20%);
+  margin: 1rem 0 1rem 1rem;
+}
+
+#checkLabel {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: hsl(0, 0%, 20%);
+  margin: 1rem 0 1rem 1rem;
+}
+
+.checkBox {
+  margin: 1rem 0 0 0;
+}
